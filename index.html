@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>CHAIKMAT
+</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	
+	
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg">
+            <div class="container">
+				<img src="images/logo.png" width="400" height="100"></a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="#Project">Project<br></a></li>
+						<li><a class="nav-link" href="#Methodology">Methodology<br></a></li>
+						<li><a class="nav-link" href="#Collaboration">Collaboration<br></a></li>
+						<li><a class="nav-link" href="#News">News</a></li>
+						<li><a class="nav-link" href="#Events">Events</a></li>
+						<li><a class="nav-link" href="#People">People<br></a></li>
+
+					</ul>
+                </div>
+            </div>
+        </nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start Banner -->
+	<div class="home-slider">
+		<ul class="rslides">
+			<li><img src="images/slider-01.jpg" alt=""></li>
+			
+			
+			
+		</ul>
+		<div class="lbox-details">
+		<br>
+		<br>
+		<br>
+			<h2>Commonsense Knowledge & Hybrid Artificial Intelligence for Trusted Flexible MAnufacturing 4.0
+ 
+</h2>
+		
+</h3>			
+			</div>
+		</div>
+		<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+		<br>
+		<br>
+		
+		<br>
+		        </div>
+    </div>
+</div>
+		
+			
+	</div>
+	<!-- End Banner -->
+	
+	
+		
+		
+	<!-- Start Project -->
+	<div id="Project" class="Project-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						
+						<p>  <b>What is CHAIKMAT?</b><br><br>
+		CHAIKMAT is a research project funded by the French National Agency of research ANR that aims to 
+		add <b>flexibility</b> and <b>transparency</b> to <b>manufacturing</b> through <b>trustful</b> automatic decision-making. 
+		To do so, we propose <b>a human-centric Artificial Intelligence (AI)</b> approach that investigates whether 
+		an available set of machines can perform a specific production processand then provides human experts 
+		with <b>meaningful explanations</b> of how the decision process is conducted. </p>
+						
+			<br>
+			<br>
+			<p>  <b>How?</b><br><br>
+			
+			CHAIKMAT propose a hybrid approach consisting of using <b>semantic reasoning and machine learning process</b> through a 
+			manufacturing <b>commonsense knowledge graph (MCSKG)</b> that integrates the machines capabilities <b>ontologies</b>, the machines monitoring
+			data, and the manufacturing commonsense knowledge. Indeed, a knowledge graph is a new paradigm for data integration that inherently
+			represents a collection of interlinked descriptions of entities–objects, events, or concepts to put data in context and enrich 
+			it semantically.
+			<br>
+			<br>
+			The Figure below presents the overall structure of the project. At the heart of the system, a <b>hybrid predictive model</b> 
+			combining ML and <b>semantic reasoning</b> will be responsible for helping users (e.g., shopfloor manager, salesperson) to decide
+			whether a certain work order with constraints, such as due date, cost, and tolerances, can be produced using the manufacturing
+			resources in their disposal. However, this hybrid predictive model will also be able to explain its prediction so that the user
+			can fully comprehend the rationale behindsuch a decision. For  example, how such a work order can be processed successfully if the answer is yes and for what reason such order cannot be processed, otherwise. The hybrid  predictive  model
+			will be trained with linked data coming from two different sources-technically, from two different triple stores. 
+						
+			<br></p>
+			<center><img src="images/Archi.png"  width="80%"/>
+			<br><b>Figure.</b> CHAIKMAT general architecture
+			</center>
+			<br>
+			<p>The first triple store will contain the capability of various machines and equipment that the shopfloor possesses. This triple
+			store will be populated by machine capability information by aggregating machine monitoring data, which will be collected 
+			by sensors capturing the real-time performance of the machines in the production line as well as from standard capability 
+			information provided by individual vendors of those machines. The second triple store will contain manufacturing commonsense
+			data (e.g., know-how, background knowledge, and experience), which will be curated from domain experts. A semantic query 
+			(e.g., SPARQL, SHACL) interface will provide the predictive models access to the linked data stored in the triple stores. 
+			Additionally, an intuitive and user-friendly dashboard will be built to facilitate the visualization of the explanations 
+			generated by the hybrid predictive model. 
+			
+			
+			</p>
+			
+			</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End Project -->
+	
+	<!-- Start Methodology -->
+	<div id="Methodology" class="Methodology-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Methodology</h2>
+						<br>
+						
+						<ul style="list-style-type:square;">
+  
+						
+						<li><p><b>MCSKG construction:</b> 
+						Acquire knowledge from domain experts and industrial stakeholders to develop the industrial
+						commonsense knowledge. <br>Define a  domain  ontology  that  formalizes  machines’ capabilities. Then, the domain ontology will be instantiated
+						using real monitoring data generated by the flexible test plant to propose a knowledge graph. </p></li>
+										
+						
+						<li><p><b>Modeling of machine learning technique through MCSKG:</b> Exploit the developed knowledge graph to model a graph-native machine learning technique. </p></li>
+						
+						
+						<li><p><b>Development of reasoning and explanation techniques:</b>
+						Propose or adapt/adopt an XAI technique that enables to explain the reason behind the results of the skill matching process and whether manufacturing a specific 
+						product is realizable or not within the factory. </p></li>
+						
+						
+						<li><p><b>Application and Validation:</b> 
+						Design a prototype of a test plant; the assembly of specific products  by  various  
+						mini  transportation  systems  andseveral  mini  robot  stations  with  different capabilities is varied by 
+						additional product inlays as well as different shapes, materials, weights, and dimensions  leading  to  a  
+						high  variety  in  product  customization. </p></li>
+						
+						
+						<li><p><b>Development of a visualization approach for explainable AI:</b>
+						Develop a human-centered approach to expose the whole reasoning and learning process througha user-friendly explanation. 
+						Such an approach will empower the trust of human actors in the proposed AI system. </p>
+						</li>
+				      </ul>
+						
+		
+						
+			<br>
+			<br>
+					</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End Methodology -->
+	
+	<!-- Start Collaboration -->
+	<div id="Collaboration" class="Collaboration-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Collaboration</h2>
+						
+						
+						<br>
+						<br>
+						
+						<center><table width=100% border=1 >
+						<tr>
+						<td width=50%><center><br><a href="https://www.lgp.enit.fr/en/index.html"><img src="images/LGP.png"  width="60%" border="0"/></a></center><br><center>&nbsp;&nbsp;National Engineering School of Tarbes (ENIT)</center></td>
+						<td width=50%><center><a href="https://www.disp-lab.fr/"><img src="images/DISP.png" width="30%" border="0"/></a></center> <center>&nbsp;&nbsp;National Institute of Applied Sciences of Lyon (INSA Lyon)</center></td>
+						
+						</tr>
+						
+						<tr>
+						<td width=50><center><a href="https://infoneer.wp.txstate.edu/"><img src="images/INFONEER.jpg" width="60%" border="0"/></a><</center><center>&nbsp;&nbsp;Texas State University (TXST)</center></td>
+						<td width=50><center><br><a href="https://usc-isi-i2.github.io/home/"><img src="images/x.jpeg" width="80%" border="0"/></a></center><center>&nbsp;&nbsp;University of Southern California (USC)</center></td>
+						</tr>
+						
+						<tr>
+						<td colspan="2" align="center"><br><center><a href="https://cecas.clemson.edu/grail/The_Lab.html"><img src="images/Grail.png"  width="40%" border="0"/></a></center><center>&nbsp;&nbsp;Clemson University</center></td>
+						</tr>
+						
+											
+						</table></center>
+						
+
+					</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End Collaboration -->
+	
+	<!-- Start News -->
+	<div id="News" class="News-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+					<br><br><br>
+						<h2>News</h2>
+						<br>
+						<br>
+						<p><center>Coming soon!</center></p>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End News -->
+	
+		<!-- Start Events -->
+	<div id="Events" class="Events-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Events</h2>	
+						<br>
+						<br>
+						<p><center>Coming soon!</center></p>
+						<br>
+						<br>						
+					</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End Events -->
+	
+	
+	<!-- Start People -->
+	<div id="People" class="People-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Involved People</h2>
+						
+						
+	<p> 					
+<br>●	<b>Prof. Hedi KARRAY</b> is the scientific coordinator of the project. He is currently a Professor of Computer Engineering 
+at the National School of Engineering of Tarbes (ENIT). He received a Ph.D. degree in applied informatics from the University of 
+Franche-Comté, France, in 2012, an MBA in innovation from IAE Besancon in 2013, and the Habilitation to Lead Research (HDR) from 
+the National Polytechnic Institute of Toulouse in 2019. He joined ENIT as an Associate Professor in September 2013. He is at the 
+head of PICS Research Group at Systems Department of the Production Engineering Laboratory (LGP). Since 2016, he became a senior 
+scientist at the National Center for Ontological Research. Karray is also a technical committee member of several international 
+research groups such as IEEE SMC, IFAC 5.4, InteropVlab, and Industrial Ontologies Foundry. He is the president of the French 
+Chapter of IEEE SMC. He coordinated and participated in several collaborative research projects (H2020, Intereg, Region, PhC, etc.)
+ on the topics of ontology-based engineering, semantic interoperability, and decision support systems. He is the technical project 
+ manager of the H2020 OntoCommons project. He is the head of the international master’s degree on Industry 4.0 at ENIT.
+<br>
+<br>●	<b>Prof. Farhad Ameri</b>  is currently a Professor of Manufacturing Engineering and Technology in the Department of Engineering
+ Technology at Texas State University and the head of the Engineering Informatics (INFONEER) research group. His research focuses 
+ on Data-driven Production Management, and Digital Manufacturing. 
+<br>
+<br>●	<b>Dr. Mayank Kejriwal</b> is a Research Assistant Professor in the Department of Industrial and Systems Engineering at the University of Southern California (USC).
+Dr. Mayank Kejriwal's research focuses on knowledge graphs and explainable AI. Currently, he is a Principal Investigator
+ on ISI's funded effort under the DARPA SAIL-ON (Science of Artificial Intelligence and Learning for Open-world Novelty) program 
+ and a co-PI on ISI's funded effort under the DARPA Machine Common Sense program. 
+<br>
+<br>●	<b>Dr.  Raymond Houe</b>  is Associate Professor in Computer Engineering at ENIT. His research interests are in the field of Decision-Making, 
+in relation to knowledge engineering and machine learning, combined with multi-criteria decision methods under uncertainty and incompleteness 
+in the field of systems monitoring.
+<br>
+<br>●	<b>Prof.  Rahul Rai</b>  is dean’s Distinguished Professor in the Clemson University International Center for Automotive Research (CU-ICAR).
+ He directs the Geometric Reasoning and Artificial Intelligence Lab. His research is focused on developing computational tools for manufacturing 
+ by combining engineering innovations with methods from machine learning, AI, statistics and optimization, and geometric reasoning.
+<br>
+<br>●	<b>Prof. Bernard Archimède</b>  is the Director of the LGP-ENIT laboratory.  He received the PhD degree in Computer Sciences applied to Industry 
+from the University Bordeaux 1 in 1991. Since this date, he is researcher in the Production Engineering Laboratory of the National School of
+ Engineers at Tarbes where he is Full Professor. He has a broad interest in intelligent manufacturing-related issues such as distributed planning
+ architectures, distributed simulation, multi-agent systems.
+<br>
+<br>●	<b>Dr. Linda Elmhadhbi</b>  is Associate Professor in Computer Engineering at the National Institute of Applied Sciences (INSA) of Lyon. She is researcher in Decision & Information Systems for Production systems Laboratory (DISP-lab). She
+ received her Ph.D. degree on applied informatics from the National Polytechnic Institute of Toulouse in 2020. Her Ph.D. dissertation concerned an ontological approach for services' interoperability in the context of crisis management.
+ Involved in different projects, she investigates decision support systems, knowledge management, domain and modular ontologies, upper-level ontologies, and the exploitation of ontologies to empower semantic interoperability. 
+
+<br>
+ <br>●	<b>Dr. Arkopaul Sarkar</b> is currently a senior researcher at ENIT, whose primary research area is in knowledge engineering
+ and its application in industries, especially manufacturing systems. He completed his doctoral study from Ohio University,
+ USA, with a dissertation titled “Semantic Agent-Based Process Planning for Distributed Cloud Manufacturing” which was 
+ completed under the guidance of Dr Dusan Sormaz. Dr Sarkar has published several articles in peer-reviewed proceedings 
+ and journals and continue his research in various aspects of modern industrial aspects, such as knowledge-driven 
+ production planning, interoperability among product life cycle data, and capability of manufacturing resources and assets.
+ At present, he is a member of the European Commission-funded OntoCommons project, aiming to establish interoperability
+ among industrial data, and Industrial Ontology Foundry, which is a collaborative project to develop a core ontology
+ for industries.
+ 
+ <br>
+
+ <br>●	<b>Syed Muhammad Raza Naqvi</b> is currently a PhD student at ENIT. He received 
+ his  master’s degree in computer science from  the Superior University Lahore, 
+ Pakistan and the Bachelors degree in Computer Science from the University of Lahore, Pakistan. 
+ He has been working in the area of knowledge technologies and Human Computer
+ Interaction. He has participated in the development of advance drug-drug ontology 
+ (ADDI), ontology driven health integration systems, and he investigates,
+ domain ontologies, knowledge graphs, and data integration.
+  </p> 
+					</div>
+				</div>
+			</div>
+			
+						
+		</div>
+	</div>
+	<!-- End People -->
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+				<p></p>
+<img src="images/ANR.png" width="10%" alt="mon image" style="float: left;">
+  <br>&nbsp;&nbsp;This project has received funding from the French National Research Agency ANR under grant agreement no. ANR-21-CE10-0004-01
+
+
+
+
+
+		<p><center>All Rights Reserved. &copy; 2021 <a href="#">CHAIKMAT</a> Design By : ENIT</center></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script> 
+	<script src="js/slider-index.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+    <script src="js/timeLine.min.js"></script>	
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
